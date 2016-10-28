@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity"
+    android:background="#000000">
+
+    <TextView
+        android:id="@+id/txVVerde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorVerde"
+        android:padding="8dp"
+        android:text="@string/verde"
+        android:textColor="@color/colorAmarillo"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/txVAmarillo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAmarillo"
+        android:padding="8dp"
+        android:text="@string/amarillo"
+        android:textColor="@color/colorIndigo"
+        android:layout_above="@id/txVVerde"
+        android:layout_toLeftOf="@id/txVVerde"/>
+
+    <TextView
+        android:id="@+id/txVNaranja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/txVAmarillo"
+        android:layout_toLeftOf="@id/txVAmarillo"
+        android:background="@color/colorNaranja"
+        android:padding="8dp"
+        android:text="@string/naranja"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/txVRojo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorRojo"
+        android:padding="8dp"
+        android:text="@string/rojo"
+        android:textColor="@color/colorAzul"
+        android:layout_above="@id/txVNaranja"
+        android:layout_toLeftOf="@id/txVNaranja"/>
+
+    <TextView
+        android:id="@+id/txVAzul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAzul"
+        android:padding="8dp"
+        android:text="@string/azul"
+        android:textColor="@color/colorAmarillo"
+        android:layout_below="@id/txVVerde"
+        android:layout_toLeftOf="@id/txVVerde"/>
+
+    <TextView
+        android:id="@+id/txVIndigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txVAzul"
+        android:layout_toLeftOf="@id/txVAzul"
+        android:background="@color/colorIndigo"
+        android:padding="8dp"
+        android:text="@string/indigo"
+        android:textColor="@color/colorVerde" />
+
+    <TextView
+        android:id="@+id/txVVioleta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txVIndigo"
+        android:layout_toLeftOf="@id/txVIndigo"
+        android:background="@color/colorVioleta"
+        android:padding="8dp"
+        android:text="@string/violeta"
+        android:textColor="@color/colorNaranja" />
+
+
+</RelativeLayout>
